@@ -54,7 +54,7 @@ while True:
         tentativas += 1 #adicionando uma tentativa,pois tentativa é 0, ou seja não tem como a pessoa acertar a resposta em 0 tentativas
         if tentativas == 1: #única coisa que muda do else de baixo é o print, coloca tentativas no singular. Pois não tem como a pessoa acertar em 1 tentativaS
             print(f"o número está correto!: {escolha}, você acertou em {tentativas} tentativa!")
-        else:
+        elif tentativas > 1:
             print(f"o número está correto!: {escolha}, você acertou em {tentativas} tentativas!")
     continuar = input("insira se deseja continuar:").lower().strip() #input para ver se a pessoa quer continuar
     if continuar == "sim" or continuar =="si" or continuar =="s": #se sim continua o programa para um novo jogo
